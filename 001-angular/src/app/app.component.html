@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor=" let user of users">
+    {{user}}
+    <button (click)="saludo()">hola</button>
+    <button (click)="deleteUser(user)">X</button>
+  </li>
+</ul>
