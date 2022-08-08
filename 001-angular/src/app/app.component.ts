@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = '001-angular';
   users: string[]= ['julio','juan', 'edu', 'gabi' , 'vivi', 'rodi'];
-
+  name: string="Vivi";
+  age:number=30;
 
 saludo(){
   alert('hola vivi')
@@ -37,10 +38,10 @@ addUser(newUser: any){
   return false;
 }
 deleteAllUser(){
-  this.users.splice(0, this.users.length);
+  this.users.splice(0, this.users.length);// borra todo el array
 }
 originList(){
-  location. reload()
+  location. reload()// refrezca la pagina
   }
   }
 

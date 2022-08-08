@@ -12,3 +12,12 @@
 </ol>
 <button (click)="deleteAllUser()">borrar todos</button>
 <button (click)="originList()">Lista original</button>
+
+<div class="">
+  <form action="">
+    <input type="text" name="name" [(ngModel)]="name">
+    <input type="text" name="age" [(ngModel)]="age">
+  </form>
+  <p>Nombre:{{name}}</p>
+  <p>Edad:{{age}}</p>
+</div>
