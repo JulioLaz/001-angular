@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,14 @@ export class AppComponent {
   users: string[]= ['julio','juan', 'edu', 'gabi' , 'vivi', 'rodi'];
   name: string="Vivi";
   age:number=30;
+  posts:any[] =[];
+  
+  constructor(private dataservice: DataService){
+    this.dataservice.getData().subscribe(data =>{
+      this.posts = data;
+      // console.log(data);
+    });
+  }
 
 saludo(){
   alert('hola vivi')
@@ -43,6 +52,8 @@ deleteAllUser(){
 originList(){
   location. reload()// refrezca la pagina
   }
+
+
   }
 
 

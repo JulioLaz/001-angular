@@ -21,3 +21,10 @@
   <p>Nombre:{{name}}</p>
   <p>Edad:{{age}}</p>
 </div>
+
+<hr>
+<div *ngFor="let post of posts">
+  <h3>{{post.id+ "- " + post.title}}</h3>
+  <p>{{post.body}}</p>
+
+</div>
