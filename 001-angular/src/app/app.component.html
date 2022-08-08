@@ -1,7 +1,14 @@
-<ul>
+<form (submit)="addUser(newUser)">
+  <input type="text" #newUser>
+  <button>send user</button>
+</form>
+
+<ol type="1">
   <li *ngFor=" let user of users">
     {{user}}
     <button (click)="saludo()">hola</button>
     <button (click)="deleteUser(user)">X</button>
   </li>
-</ul>
+</ol>
+<button (click)="deleteAllUser()">borrar todos</button>
+<button (click)="originList()">Lista original</button>

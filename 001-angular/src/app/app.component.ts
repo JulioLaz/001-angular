@@ -29,6 +29,19 @@ deleteUser(user:any){
           this.users.splice(user, 1)
       }
     
+addUser(newUser: any){
+  console.log(newUser.value);
+  this.users.push(newUser.value);
+  newUser.value = ''; //limpia el casillero input y pone el cursor
+  newUser.focus();//mantiene el cursor siempre en el formulario
+  return false;
+}
+deleteAllUser(){
+  this.users.splice(0, this.users.length);
+}
+originList(){
+  location. reload()
+  }
   }
 
 
