@@ -1,3 +1,9 @@
+<router-outlet></router-outlet>
+<ul>
+  <li>
+    <a routerLink="/about">ABOUT</a>
+  </li>
+</ul>
 <form (submit)="addUser(newUser)">
   <input type="text" #newUser>
   <button>send user</button>
@@ -26,5 +32,5 @@
 <div *ngFor="let post of posts">
   <h3>{{post.id+ "- " + post.title}}</h3>
   <p>{{post.body}}</p>
-
 </div>
+  

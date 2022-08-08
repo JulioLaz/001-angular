@@ -1,0 +1,11 @@
+<li>
+   <a routerLink="/">HOME</a>
+ </li>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae est suscipit quas, porro sunt ut enim fugiat distinctio animi natus ex tempore cupiditate voluptate magni? Inventore dolorum cumque omnis.</p>
+
+<hr>
+<div *ngFor="let post of posts">
+  <h3>{{post.id+ "- " + post.title}}</h3>
+  <!-- <p>{{post.body}}</p> -->
+</div>

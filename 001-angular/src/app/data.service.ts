@@ -7,7 +7,8 @@ import { Post } from './post';
 export class DataService {
 
   constructor(private http: HttpClient) { 
-console.log("service is working")
+console.log("service is working");
+console.log(HttpClient);
   }
   getData(){
 return this.http.get<Post[]>("https://jsonplaceholder.typicode.com/posts")
